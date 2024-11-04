@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPRA GAMER</title>
+  <link rel="stylesheet" href="assets/css/styleProductos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="icon" href="assets/logos/iconoCG.gif" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <header>
+    <!-- HEADER LOGO-INICIAR SESION- CARRITO -->
+    <div class="Caja">
+      <a href="index.html">
+        <img class="logo-fix" src="assets/logos/logo-fix.png" alt="">
+      </a>
+      <div class="form-floating-custom-container">
+        <div class="form-floating-custom mb-3">
+          <input name="searchField" id="inputSearch" class="form-control search-input" placeholder="Buscar productos">
+          <label for="inputSearch" class="search-label">Buscador</label>
+          <img src="assets/logos/Buscador.png" alt="search-icon" class="search-icon">
+        </div>
+      </div>
+      <div class="CajaInicioCarrito">
+        <a href="" class="Inicio-Sesion" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="assets/logos/iniciar sesion.png" alt="Imagen">
+          <span class="Texto">INICIAR SESIÓN</span>
+        </a>
+        <a href="" class="Carrito">
+          <img src="assets/logos/carrito-compra.png" alt="Imagen-Carrito">
+        </a>
+      </div>
+    </div>
+    </div>
+    <!-- NAV -->
+    <div class="Enlaces">
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+          data-bs-auto-close="outside">
+          ≡
+        </button>
+        <div class="dropdown-menu p-4">
+          <form>
+            <a class="dropdown-item" href="Productos.html">PRODUCTOS</a>
+            <a class="dropdown-item" href="">ARMÁ TU PC</a>
+            <a class="dropdown-item" href="">AYUDA</a>
+          </form>
+          <div class="MARCAS-SPONSOR1">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              MARCAS SPONSOR
+            </button>
+            <div class="dropdown-menu p-4">
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/hyperx.png" alt=""></a>
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/intel.png" alt=""></a>
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/rog.png" alt=""></a>
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/nvidia.png" alt=""></a>
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/amd.png" alt=""></a>
+              <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/wd.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Paginas">
+        <a class="PRODUCTOS" href="Productos.html">PRODUCTOS</a>
+        <a class="ARMÁ TU PC" href="">ARMÁ TU PC</a>
+        <a class="AYUDA" href="">AYUDA</a>
+        <div class="MARCAS-SPONSOR">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+            data-bs-auto-close="outside">MARCAS SPONSOR</button>
+          <form class="dropdown-menu p-4">
+            <div class="mb-3">
+              <a href=""><img src="./assets/marcas-sponsor/hyperx.png" alt=""></a>
+              <a href=""><img src="./assets/marcas-sponsor/intel.png" alt=""></a>
+              <a href=""><img src="./assets/marcas-sponsor/rog.png" alt=""></a>
+              <a href=""><img src="./assets/marcas-sponsor/nvidia.png" alt=""></a>
+              <a href=""><img src="./assets/marcas-sponsor/amd.png" alt=""></a>
+              <a href=""><img src="./assets/marcas-sponsor/wd.png" alt=""></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIAR SESION MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+            <h2 class="modal-subtitle" id="exampleModalLabel">Para comenzar ingresá tu email</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input name="Buscador-Modal" id="input1" class="form-control Buscador-Modal" placeholder="Email*">
+              <label for="input1" class="floating">Email*</label>
+            </div>
+            <button class="Boton-Continuar" disabled>CONTINUAR</button>
+            <BUTTon class="Boton-Crear-Cuenta">CREAR CUENTA</BUTTon>
+            <div class="Youtube-Video">
+              <img src="assets/logos/Youtube-mini.png" alt="">
+              <a href="" class="Video">Ver video instructivo de ingreso a la página</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Si tenés problemas para iniciar sesión escribinos a feedback_nuevapagina@compragamer.net</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="imagenarriba" id="imagenArriba">
+      <img class="imagen" src="./assets/Img-Productos/Destacados_Productos.jpg" alt="">
+      <h3 class="textoimagen">PRODUCTOS DESTACADOS</h3>
+    </div>
+
+    <div class="contenedorx">
+
+      <div class="Contenedor">
+        <!-- Acordeon de categorias -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Categorias</button>
+            <div class="accordion-content">
+              <!-- Sub-secciones -->
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Equipos y Notebooks</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Notebooks</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Kits de actualizacion</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Kits de actualizacion</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Procesadores</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Procesadores AMD</button>
+                  <button class="sub-content-button">- Procesadores Intel</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Mothers</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Mothers AMD</button>
+                  <button class="sub-content-button">- Mothers Intel</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Placas de video</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Placas de Video GeForce</button>
+                  <button class="sub-content-button">- Placas de Video Radeon AMD</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Memorias Ram</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Memorias </button>
+                  <button class="sub-content-button">- Memorias Notebook</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Almacenamiento</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Discos Rigidos</button>
+                  <button class="sub-content-button">- Discos Solidos</button>
+                  <button class="sub-content-button">- Tarjetas de Memoria Micro SD</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Refrigeracion</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Coolers Fan</button>
+                  <button class="sub-content-button">- Coolers CPU</button>
+                  <button class="sub-content-button">- Pasta Termica</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Gabinetes</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Gabinetes</button>
+                  <button class="sub-content-button">- Modding | Cables, Iluminación y otros</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Fuentes</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Fuentes de Alimentacion</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Monitores</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Monitores y pantallas</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Perifericos</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Auriculares</button>
+                  <button class="sub-content-button">- Teclados</button>
+                  <button class="sub-content-button">- Mouses</button>
+                  <button class="sub-content-button">- Webcams</button>
+                  <button class="sub-content-button">- Joysticks</button>
+                  <button class="sub-content-button">- Mousepads</button>
+                  <button class="sub-content-button">- Parlantes</button>
+                  <button class="sub-content-button">- Combos de Teclados, Mouses y otros</button>
+                  <button class="sub-content-button">- Microfono</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Sillas Gamer</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Sillas Gamer</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Robots</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Robots</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Conectividad</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Placas de red inalambricas</button>
+                  <button class="sub-content-button">- Routers WiFi</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Estabilizadores y UPS</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Estabilizadores</button>
+                  <button class="sub-content-button">- UPS</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Cables y Adaptadores</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Cables y adaptadores</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Celulares y Smartwatch</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Celulares</button>
+                  <button class="sub-content-button">- Accesorios de celulares</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Impresoras e Insumos</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Impresoras y Multifunciones</button>
+                  <button class="sub-content-button">- Insumos Originales</button>
+                </div>
+              </div>
+              <div class="sub-accordion">
+                <button class="sub-accordion-header">Televisores</button>
+                <div class="sub-accordion-content">
+                  <button class="sub-content-button">- Televisores</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ordenar por -->
+      <div class="ContenedorOrdenarCards">
+        <div class="ContenedorOrdenar">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Ordenar por
+          </button>
+          <div class="dropdown-menu p-4">
+            <button class="dropdown-item" id="sort-price-high">Precio mayor</button>
+            <button class="dropdown-item" id="sort-price-low">Precio menor</button>
+          </div>
+        </div>
+        <div class="contenedorFiltro">
+          <button id="eliminarFiltro" class="eliminarFiltro">Eliminar Filtros</button>
+        </div>
+        <!-- cards -->
+        <div class="contenedorz">
+          <div id="contenedor_cards" class="cards-container">
+
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <div class="containerslider">
+      <div class="container">
+        <section class="customer-logos slider">
+          <div class="slide"><img src="assets/marcas/adata.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/amd.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/asrock.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/bequiet.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/deepcool.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/geforce.png" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/geil.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/hyperx.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/intel.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/kolink.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/lianli.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/logitech.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/republicofgamers.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/tforce.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/viewsonic.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/westerndigital.jpg" alt="logo"></div>
+          <div class="slide"><img src="assets/marcas/zotag.jpg" alt="logo"></div>
+        </section>
+      </div>
+    </div>
+    </div>
+    <!-- CAJAS DEL FOOTER -->
+    <div class="Cajas">
+      <div class="Caja1">
+        <a href="">
+          <div class="border"></div>
+          <img src="assets/logos/certificado.png" alt="" class="CertificadoMedia">
+          <img src="assets/logos/datafiscal.jpg" alt="" class="Data-Fiscal">
+        </a>
+      </div>
+      <div class="Caja2">
+        <a href="" class="Ayuda">Ayuda</a>
+        <a href="" class="Boton-Arrepentimiento">Botón de arrepentimiento</a>
+        <a href="" class="Terminos">Términos y condiciones</a>
+      </div>
+      <div class="Caja3">
+        <p class="Seguinos">Seguinos en</p>
+        <div class="Botones">
+          <a href="" class="boton1">
+            <img src="assets/logos/x-logo-blanco.png" alt="" class="x">
+            <img src="assets/logos/x-logo-naranja.png" alt="" class="x2">
+          </a>
+          <a href="" class="boton2">
+            <img src="assets/logos/youtube-logo-blanco.png" alt="" class="Youtube">
+            <img src="assets/logos/youtube-logo-naranja.png" alt="" class="Youtube2">
+          </a>
+          <a href="" class="boton3">
+            <img src="assets/logos/facebook-icon-blanco.png" alt="" class="Facebook">
+            <img src="assets/logos/facebook-icon-naranja.png" alt="" class="Facebook2">
+          </a>
+          <a href="" class="boton4">
+            <img src="assets/logos/linkedin-icon-blanco.png" alt="" class="Linkedin">
+            <img src="assets/logos/linkedin-icon-naranja.png" alt="" class="Linkedin2">
+          </a>
+          <a href="" class="boton5">
+            <img src="assets/logos/instagram-icon-blanco.png" alt="" class="Instagram">
+            <img src="assets/logos/instagram-icon-naranja.png" alt="" class="Instagram2">
+          </a>
+          <a href="" class="boton6">
+            <img src="assets/logos/twitch-icon-blanco.png" alt="" class="Twitch">
+            <img src="assets/logos/twitch-icon-naranja.png" alt="" class="Twitch2">
+          </a>
+          <a href="" class="boton7">
+            <img src="assets/logos/tiktok-icon-blanco.png" alt="" class="Tiktok">
+            <img src="assets/logos/tiktok-icon-naranja.png" alt="" class="Tiktok2">
+          </a>
+        </div>
+      </div>
+      <div class="Caja4">
+        <img src="assets/logos/certificado.png" alt="" class="Certificado">
+        <a href="" class="Trabajar">¡Trabajá con nosotros!</a>
+      </div>
+    </div>
+    <!-- COPYRIGHT -->
+    <div class="Derechos">
+      <p class="Marcas-Texto">Las marcas y logos de compragamer.com compragamer.com/tv compragamer.com/reviews
+        son propiedad de Newton Station SRL</p>
+      <p class="Derechos-Texto">Todos los derechos reservados 2017</p>
+    </div>
+  </footer>
+</body>
+<script>
+
+  $(document).ready(function () {
+    $('.customer-logos').slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        setting: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 520,
+        setting: {
+          slidesToShow: 3
+        }
+      }]
+    });
+  });
+
+</script>
+<script src="./assets/js/Base.js"></script>
+<script src="assets/js/scriptbase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>

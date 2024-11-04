@@ -1,0 +1,1248 @@
+
+/* Header */
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;   
+    background-color: #f8f9fa;
+    position: relative; 
+}
+
+.Caja {
+    width: 100%;
+    color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo-fix {
+    position: relative;
+    left: 50%;
+    top: 7px;
+}
+
+/* BUSCADOR */
+
+.form-floating-custom-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.form-floating-custom {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+}
+
+.search-input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    height: 56px;
+    background-color: transparent;
+    border: 1px solid grey !important;
+    border-radius: 0;
+    box-sizing: border-box !important;
+    padding: 15px 50px 15px 15px;
+    width: 100%;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.search-input:focus {
+    border-color: rgb(253, 97, 26) !important;
+}
+
+.search-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: grey;
+    pointer-events: none;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    background-color: white;
+    z-index: 1;
+}
+
+.search-input::placeholder {
+    opacity: 0 !important;
+    transition: opacity 0.2s ease;
+}
+
+.search-input:focus::placeholder {
+    opacity: 1 !important;
+}
+
+.search-input:focus ~ .search-label,
+.search-input:not(:placeholder-shown) ~ .search-label {
+    top: 0px; 
+    font-size: 12px;
+    color: rgb(253, 97, 26);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    color: grey;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+/* CAJA CARRITO - INICIO */
+
+.CajaInicioCarrito {
+    position: absolute;
+    width: 300px;
+    right: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*INICIO SESION */
+
+.Inicio-Sesion {
+    position: relative;
+    width: 170px;
+    height: 36px;
+    background-color: rgb(253, 97, 26);
+    padding: 0 3px;
+    margin-top: 20px;
+    right: 10%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Imagen {
+    margin-right: 20px;
+}           
+.Texto {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+}
+
+/* CARRITO */
+
+.Carrito {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: transparent;     
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 8%;
+    top: 20px;
+}
+
+.Imagen-Carrito {
+    width: 100%;
+    height: 100%;
+}
+
+/* Enlaces */
+
+
+.Enlaces {
+    position: relative;
+    background-color: rgb(253, 97, 26); 
+    padding: 17px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 10px;     
+}
+
+.dropdown {
+    display: none !important;
+}
+
+.MARCAS-SPONSOR button{
+    background-color: transparent !important;
+    border: none !important;
+    color: black !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    transition: color 0.1s ease-in-out !important;
+}
+
+.MARCAS-SPONSOR button:hover {
+    color: white !important;
+}
+
+.MARCAS-SPONSOR .dropdown-menu .mb-3 {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 250px !important;
+    gap: 10px !important;
+    margin-top: -7% !important;
+}
+.Paginas {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: bold;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 170px;
+    gap: 10%;
+}
+
+
+.Paginas a {
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+
+.Paginas a:hover{
+    color: white;
+}
+
+/* MAIN */
+
+
+main{
+    padding: 0;
+    margin: 0;
+    width: 100%;    
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* SLIDER CARRUSEL */
+
+.Carruseles {
+    height: 500px;
+}
+.CajaCarrusel1 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+}
+
+.Imagenes-Carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.Imagenes-Carrusel .image {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.Imagenes-Carrusel img {
+    width: 100%;
+    display: block;
+}
+
+.nav_dots {
+    text-align: center;
+    position: relative;
+    bottom: 2px;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(253, 184, 152);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: rgb(253, 97, 26);
+}
+
+/* CarruselChico */
+
+.CajaCarruselChico {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+}
+
+.Imagenes-Carrusel1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.Imagenes-Carrusel1 .image {
+    min-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.Imagenes-Carrusel1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav_dots1 {
+    text-align: center;
+    position: relative;
+    bottom: 2px;
+    width: 100%;
+}
+
+.dot1 {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(253, 184, 152);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot1.active {
+    background-color: rgb(253, 97, 26);
+}
+
+/* SLIDER CARRUSEL MEDIO */
+
+.CajaTextoCarrusel{
+    width: 92%;
+    height: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    font-style:bold;
+    color: rgb(69, 69, 69);
+    letter-spacing: 1px;
+    display: flex;
+    padding-top: 27px;
+    padding-left: 15px;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+
+.CajaCarrusel2 {
+    width: 80%;
+    height: 1000px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.productos-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.producto-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    text-align: center;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.producto-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.producto-card .nombre {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.producto-card .precio {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 19px;
+    margin-top: auto;
+    color: rgb(98, 137, 195);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+/* SLIDER INFERIOR */
+
+.container{
+    width: 120%;
+}
+.slick-slide{   
+    margin: 0 20px;
+    width: 100%;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;      
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 2px;
+    width: 100%;
+}
+.slick-slide img{
+    display: block;
+    width: 100%;
+}
+.slick-initialized .slick-slide{
+    display: block;
+    width: 100%;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgb(253, 97, 26);
+    padding: 1rem; 
+    position: relative; 
+    width: 100%; 
+    height: 200px;
+    box-sizing: border-box;
+    margin-top: auto;
+
+}
+
+.Cajas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.Cajas > div {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    
+}
+
+.Cajas > div:last-child {
+    border-right: none;
+}
+
+/* CAJA 1 */
+
+.Caja1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.CertificadoMedia{
+    display: none;
+}
+
+.Data-Fiscal {
+    padding: 30%;
+    height: 100%;
+    width: 115%;
+}
+
+.border {
+    display: none;
+}
+
+/* CAJA 2 */
+
+.Caja2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap: 15px;
+}
+
+.Ayuda{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 20%; 
+    height: 15%; 
+    border: 1px solid white;
+    color: rgb(253, 97, 26);
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.Ayuda:hover{
+    text-decoration: none;
+    background-color: rgb(253, 97, 26);
+    color: white;
+}
+
+.Boton-Arrepentimiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width:65%; 
+    height: 18%; 
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.Boton-Arrepentimiento:hover{
+    text-decoration: none;
+    color: rgb(253, 97, 26);
+    background-color: white;
+}
+
+.Terminos{
+    color: white;
+}
+
+.Terminos:hover{
+    color: white;
+}
+/* CAJA 3 */
+
+.Caja3 {
+    display: flex;
+    flex-direction: row;
+    align-content: center; 
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 3%;
+    flex-wrap: wrap;
+}
+
+.Seguinos {
+    padding-top: 1%;
+    padding-right: 20%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.Botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Botones a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.Botones a img {
+    position: absolute;
+}
+
+.x {
+    width: 60%;
+    height: 60%; 
+    object-fit: cover;
+    display: block;
+}
+
+.x2 {
+    width: 60%;
+    height: 60%; 
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+}
+
+.boton1:hover .x {
+    opacity: 0;
+}
+
+.boton1:hover .x2 {
+    opacity: 1;
+}
+
+.Botones > a:hover {
+    background-color: white;
+}
+
+.Youtube {
+    width: 70%;
+    height: 53%; 
+}
+
+.Youtube2 {
+    width: 70%;
+    height: 53%;
+    opacity: 0;
+}
+
+.boton2:hover .Youtube {
+    opacity: 0;
+}
+
+.boton2:hover .Youtube2 {
+    opacity: 1;
+}
+
+.Facebook {
+    width: 30%;
+    height: 55%; 
+}
+
+.Facebook2 {
+    width: 30%;
+    height: 55%; 
+    opacity: 0;
+}
+
+.boton3:hover .Facebook {
+    opacity: 0;
+}
+
+.boton3:hover .Facebook2 {
+    opacity: 1;
+}
+
+
+.Linkedin {
+    width: 70%;
+    height: 64%; 
+}
+
+.Linkedin2 {
+    width: 70%;
+    height: 64%;
+    opacity: 0;
+}
+
+.boton4:hover .Linkedin {
+    opacity: 0;
+}
+
+.boton4:hover .Linkedin2 {
+    opacity: 1;
+}
+
+.Instagram {
+    width: 65%;
+    height: 62%; 
+}
+
+.Instagram2 {
+    width: 65%;
+    height: 62%; 
+    opacity: 0;
+}
+
+.boton5:hover .Instagram {
+    opacity: 0;
+}
+
+.boton5:hover .Instagram2 {
+    opacity: 1;
+}
+
+.Twitch {
+    width: 95%;
+    height: 95%; 
+}
+
+.Twitch2 {
+    width: 95%;
+    height: 95%; 
+    opacity: 0;
+}
+
+.boton6:hover .Twitch {
+    opacity: 0;
+}
+
+.boton6:hover .Twitch2 {
+    opacity: 1;
+}
+
+
+.Tiktok {
+    width: 70%;
+    height: 70%; 
+}
+
+.Tiktok2 {
+    width: 70%;
+    height: 70%; 
+    opacity: 0;
+}
+
+.boton7:hover .Tiktok {
+    opacity: 0;
+}
+
+.boton7:hover .Tiktok2 {
+    opacity: 1;
+}
+
+
+/* CAJA 4 */
+
+.Caja4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right:5%;
+}
+
+.Certificado {
+    width: 23%;
+    height: 60%;
+}
+
+.Trabajar {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    font-style: bold;
+    color: white;
+    bottom: 5%;
+}
+
+.Trabajar:hover {
+    color: white;
+}
+
+/* Abajo footer */ 
+
+.Derechos {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: grey;
+    font-style: bold;
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Marcas-Texto, .Derechos-Texto {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* MODAL */
+
+.modal-content {
+    text-align: center; 
+    border: none;
+    box-shadow: none;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px; 
+    right: 10px;    
+}
+
+
+.modal-title {
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.modal-subtitle {
+    color: rgb(253, 97, 26); 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    padding-top: 13px; 
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-floating {
+    position: relative;
+    width: 80%; 
+}
+
+.Buscador-Modal {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    height: 56px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(253, 97, 26) !important;
+    margin-bottom: 30px;
+    border-left: none !important; 
+    border-right: none !important;
+    border-top: none !important;
+    border-radius: 0% !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.form-floating label {
+    color: rgb(253, 97, 26);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    transition: 0.2s ease;
+    pointer-events: none; 
+    background-color: transparent;
+}
+
+.Buscador-Modal:focus ~ label {
+    color: rgb(253, 97, 26) !important;
+}
+
+.modal-body button {
+    height: 40px;
+    width: 80%;
+    border-radius: 5px; 
+}
+
+.Boton-Continuar {
+    background-color: #e0e0e0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    border:1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+.Boton-Crear-Cuenta {
+    color: rgb(253, 97, 26);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    border:1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+.Video {
+    color: rgb(113, 113, 255);
+}
+.modal-footer {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    justify-content: center; 
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1250px){
+    .CajaInicioCarrito{
+        right: 20px;
+        width: 210px;
+        gap: 10px;
+    }
+    .logo-fix {
+        left: 0;
+    }
+    .Ayuda{
+        font-size: 13px;
+    }
+    .Boton-Arrepentimiento{
+        font-size: 13px;
+    }
+    .Certificado{
+        width: 20px;
+        height: 80px;
+    }
+    .Caja4{
+        padding-right: 0;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .CajaInicioCarrito{
+        right: 20px;
+        width: 210px;
+        gap: 10px;
+    }
+    .CajaCarrusel1 {
+        display: none;
+    }
+    .CajaCarruselChico {
+        display: block;
+        height: 700px;
+    }
+    .Carruseles {
+        height: 700px;
+    }
+    .Paginas {
+        gap: 100px;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .logo-fix {
+        left: 60px;
+    }
+    .container{
+        width: 400% !important;
+        height: 100px !important;
+        margin-bottom: 60px !important;
+    }
+
+    .slick-slide{   
+        margin: 0 20px;
+        width: 200px !important;
+        height: 200px;
+        margin-bottom: 20px !important;
+    }
+    .Caja {
+        height: 150px;
+    }
+    .form-floating-custom-container {
+        right: -130px !important;
+        width: 1000px !important;
+    }
+    .search-label{
+        margin-top: -10%;
+    }
+    .search-icon{
+        margin-top: -11%;
+    }
+    .search-input:focus ~ .search-label,
+    .search-input:not(:placeholder-shown) ~ .search-label {
+        top: 30px; 
+    }
+    .CajaInicioCarrito{
+        right: 20px;
+        width: 210px;
+        margin-top: 70px;
+        margin-right: 260px;
+    }
+    .Paginas{ 
+        display: none;
+    }
+    .dropdown {
+        display: block !important;
+    }
+    .dropdown > button {
+        background-color: transparent !important;
+        border: none !important;
+        font-size: 40px;
+        margin-bottom: 10px !important;
+    }
+
+    .dropdown form a:hover{
+        background-color: transparent !important;
+        color: white;
+    }
+
+    .dropdown > .dropdown-menu {
+        width: 764px !important;
+        border-radius: 0% !important;
+        margin-left: -20% !important;
+        margin-top: -4% !important;
+        height: 180px !important;
+        background-color: rgb(253, 97, 26) !important;
+        border: none !important;
+    }
+    .dropdown > .dropdown-menu .mb-3 {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 40px;
+    } 
+
+    .dropdown > .dropdown-menu > .mb-3 > a {
+        text-decoration: none !important;
+        width: 20px;
+        background-color: rgb(253, 97, 26) !important;
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .MARCAS-SPONSOR1 button{
+        background-color: transparent !important;
+        border: none !important;
+        color: black !important;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        font-size: 15px !important;
+        margin-left: 4px;
+    }
+    
+    .MARCAS-SPONSOR1 button:hover {
+        color: white !important;
+    }
+
+    .Enlaces{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start ;
+    }
+    .Ayuda{
+        font-size: 18px;
+        width: 70px;
+        height: 30px !important;
+    }
+    .Boton-Arrepentimiento{
+        font-size: 18px;
+        width: 230px;
+        height: 30px !important;
+    }
+    .Certificado{
+        display: none;
+    }
+    footer {
+        height: 600px;
+    }
+    .Cajas {
+        flex-direction: column;
+        border-right: 0;
+    }
+    .Cajas > div {
+        border-right: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+    .Cajas > div:last-child {
+        border-bottom: none;
+    }
+    .CertificadoMedia {
+        display: block;
+        width: 23%;
+        height: 60%;
+    }
+    .Caja1{
+        flex-direction: row-reverse;
+        height: 300px !important;
+    }
+    .CertificadoMedia{
+        position: absolute;
+        right: 280px;
+        height: 150px;
+        width: 100px;
+    }
+    .Data-Fiscal{
+        position: absolute;
+        padding: 0%;
+        height: 150px;
+        width: 100px;
+        left: 280px;
+    }
+    .border {
+        position: absolute;
+        display: block;
+        background-color: white;
+        height: 90%;
+        transform: translateY(-50%);
+        margin-top: 100px;
+    }
+    .Caja2{
+        height: 40% !important;
+    }
+    .Caja3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px !important;
+    }
+    .Seguinos {
+        margin-left: 100px !important;
+        margin-top: 15px;
+    }
+    .Caja4 {
+        height: 70px !important; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .CertificadoMedia{
+        position: absolute;
+        right: 220px;
+        height: 150px;
+        width: 100px;
+    }
+    .Data-Fiscal{
+        position: absolute;
+        padding: 0%;
+        height: 150px;
+        width: 100px;
+        left: 240px;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        height: 300px;
+    }
+    .logo-fix {
+        margin-top: -45px;
+        margin-left: 40px;
+    }
+    .form-floating-custom-container{
+        margin-top: 40px;
+        margin-right: 50px;
+        margin-left: -280px;
+    }
+    .CajaInicioCarrito{
+        margin-top: 95px;
+        margin-right: 120px;
+    }
+    .CertificadoMedia{
+        margin-right: 30px;
+    }
+    .Data-Fiscal{
+        margin-left: 20px;
+    }
+}

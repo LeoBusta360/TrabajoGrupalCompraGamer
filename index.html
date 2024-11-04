@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA GAMER</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="icon" href="assets/logos/iconoCG.gif" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- HEADER LOGO-INICIAR SESION- CARRITO -->
+        <div class="Caja">
+            <a href="index.html">
+                <img class="logo-fix" src="assets/logos/logo-fix.png" alt="">
+            </a>
+            <div class="form-floating-custom-container">
+                <div class="form-floating-custom mb-3">
+                    <input name="searchField" id="inputSearch" class="form-control search-input"
+                        placeholder="Buscar productos">
+                    <label for="inputSearch" class="search-label">Buscador</label>
+                    <img src="assets/logos/Buscador.png" alt="search-icon" class="search-icon">
+                </div>
+            </div>
+            <!-- NUEVO -->
+            <div class="CajaInicioCarrito">
+                <a href="" class="Inicio-Sesion" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="assets/logos/iniciar sesion.png" alt="Imagen">
+                    <span class="Texto">INICIAR SESIÓN</span>
+                </a>
+                <a href="" class="Carrito">
+                    <img src="assets/logos/carrito-compra.png" alt="Imagen-Carrito">
+                </a>
+            </div>
+        </div>
+        </div>
+        <!-- NAV -->
+        <div class="Enlaces">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    ≡
+                </button>
+                <div class="dropdown-menu p-4">
+                    <form>
+                        <a class="dropdown-item" href="Productos.html">PRODUCTOS</a>
+                        <a class="dropdown-item" href="">ARMÁ TU PC</a>
+                        <a class="dropdown-item" href="">AYUDA</a>
+                    </form>
+                    <div class="MARCAS-SPONSOR1">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MARCAS SPONSOR
+                        </button>
+                        <div class="dropdown-menu p-4">
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/hyperx.png" alt=""></a>
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/intel.png" alt=""></a>
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/rog.png" alt=""></a>
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/nvidia.png" alt=""></a>
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/amd.png" alt=""></a>
+                            <a class="dropdown-item" href=""><img src="./assets/marcas-sponsor/wd.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Paginas">
+                <a class="PRODUCTOS" href="Productos.html">PRODUCTOS</a>
+                <a class="ARMÁ TU PC" href="">ARMÁ TU PC</a>
+                <a class="AYUDA" href="">AYUDA</a>
+                <div class="MARCAS-SPONSOR">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="outside">MARCAS SPONSOR</button>
+                    <form class="dropdown-menu p-4">
+                        <div class="mb-3">
+                            <a href=""><img src="./assets/marcas-sponsor/hyperx.png" alt=""></a>
+                            <a href=""><img src="./assets/marcas-sponsor/intel.png" alt=""></a>
+                            <a href=""><img src="./assets/marcas-sponsor/rog.png" alt=""></a>
+                            <a href=""><img src="./assets/marcas-sponsor/nvidia.png" alt=""></a>
+                            <a href=""><img src="./assets/marcas-sponsor/amd.png" alt=""></a>
+                            <a href=""><img src="./assets/marcas-sponsor/wd.png" alt=""></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- INICIAR SESION MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                        <h2 class="modal-subtitle" id="exampleModalLabel">Para comenzar ingresá tu email</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input name="Buscador-Modal" id="input1" class="form-control Buscador-Modal"
+                                placeholder="Email*">
+                            <label for="input1" class="floating">Email*</label>
+                        </div>
+                        <button class="Boton-Continuar" disabled>CONTINUAR</button>
+                        <BUTTon class="Boton-Crear-Cuenta">CREAR CUENTA</BUTTon>
+                        <div class="Youtube-Video">
+                            <img src="assets/logos/Youtube-mini.png" alt="">
+                            <a href="" class="Video">Ver video instructivo de ingreso a la página</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Si tenés problemas para iniciar sesión escribinos a feedback_nuevapagina@compragamer.net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PRIMER CARRUSEL + CARRUSEL CON MEDIA QUERIES -->
+        <div class="Carruseles">
+            <div class="CajaCarrusel1">
+                <div class="Imagenes-Carrusel first-active">
+                    <div class="image"><img src="https://i.postimg.cc/8PfW91zS/banner1largo.jpg" alt="Banner 1"></div>
+                    <div class="image"><img src="https://i.postimg.cc/QtMKbDyv/banner2largo.jpg" alt="Banner 2"></div>
+                    <div class="image"><img src="https://i.postimg.cc/Gt8BWQrQ/banner3largo.jpg" alt="Banner 3"></div>
+                    <div class="image"><img src="https://i.postimg.cc/13cg14xL/banner4largo.jpg" alt="Banner 4"></div>
+                    <div class="image"><img src="https://i.postimg.cc/s2Tv18gm/banner5largo.jpg" alt="Banner 5"></div>
+                    <div class="image"><img src="https://i.postimg.cc/XJhqkCFy/banner6largo.jpg" alt="Banner 6"></div>
+                    <div class="image"><img src="https://i.postimg.cc/nMfL6f3F/banner7largo.jpg" alt="Banner 7"></div>
+                    <div class="image"><img src="https://i.postimg.cc/VLtDyyY3/banner8largo.jpg" alt="Banner 8"></div>
+                    <div class="image"><img src="https://i.postimg.cc/52qg0wQg/banner9largo.jpg" alt="Banner 9"></div>
+                    <div class="image"><img src="https://i.postimg.cc/7L9T0hmg/banner10largo.jpg" alt="Banner 10"></div>
+                    <div class="image"><img src="https://i.postimg.cc/Qdp7N07Y/banner11largo.jpg" alt="Banner 11"></div>
+                </div>
+                <div class="nav_dots">
+                    <div class="dot" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                    <div class="dot" data-index="6"></div>
+                    <div class="dot" data-index="7"></div>
+                    <div class="dot" data-index="8"></div>
+                    <div class="dot" data-index="9"></div>
+                    <div class="dot" data-index="10"></div>
+                </div>
+            </div>
+            <div class="CajaCarruselChico">
+                <div class="Imagenes-Carrusel1 first-active">
+                    <div class="image"><img src="https://i.postimg.cc/1tWwhXF9/banner1.jpg" alt="Banner 1"></div>
+                    <div class="image"><img src="https://i.postimg.cc/xj4M6kY5/banner2.jpg" alt="Banner 2"></div>
+                    <div class="image"><img src="https://i.postimg.cc/zf8gyKSz/banner3.jpg" alt="Banner 3"></div>
+                    <div class="image"><img src="https://i.postimg.cc/NMP9CVhF/banner4.jpg" alt="Banner 4"></div>
+                    <div class="image"><img src="https://i.postimg.cc/qqPt43vd/banner5.jpg" alt="Banner 5"></div>
+                    <div class="image"><img src="https://i.postimg.cc/PrDpK2Sf/banner6.jpg" alt="Banner 6"></div>
+                    <div class="image"><img src="https://i.postimg.cc/d0shsvwD/banner7.jpg" alt="Banner 7"></div>
+                    <div class="image"><img src="https://i.postimg.cc/VvC6GkBZ/banner8.jpg" alt="Banner 8"></div>
+                    <div class="image"><img src="https://i.postimg.cc/HWV62cFW/banner9.jpg" alt="Banner 9"></div>
+                    <div class="image"><img src="https://i.postimg.cc/bJYkBksC/banner10.jpg" alt="Banner 10"></div>
+                    <div class="image"><img src="https://i.postimg.cc/Xqm5qPxm/banner11.jpg" alt="Banner 11"></div>
+                </div>
+                <div class="nav_dots1">
+                    <div class="dot1" data-index1="0"></div>
+                    <div class="dot1" data-index1="1"></div>
+                    <div class="dot1" data-index1="2"></div>
+                    <div class="dot1" data-index1="3"></div>
+                    <div class="dot1" data-index1="4"></div>
+                    <div class="dot1" data-index1="5"></div>
+                    <div class="dot1" data-index1="6"></div>
+                    <div class="dot1" data-index1="7"></div>
+                    <div class="dot1" data-index1="8"></div>
+                    <div class="dot1" data-index1="9"></div>
+                    <div class="dot1" data-index1="10"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CARRUSEL CON PRODUCTOS -->
+        <div class="CajaTextoCarrusel">
+            <p>ÚLTIMAS NOVEDADES</p>
+        </div>
+        <div class="slider-container">
+            <img id="prevBtn" class="slider-btn" src="assets/logos/prev-boton.png" alt="">  
+            <div id="productos-slider" class="productos-slider">
+                <div id="productos-container" class="productos-container"></div>
+            </div>
+            <img id="nextBtn" class="slider-btn" src="assets/logos/next-boton.png" alt="">
+        </div>
+        <!-- SLIDER INFERIOR MARCAS -->
+        <div class="container">
+            <section class="customer-logos slider">
+                <div class="slide"><img src="assets/marcas/adata.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/amd.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/asrock.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/bequiet.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/deepcool.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/geforce.png" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/geil.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/hyperx.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/intel.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/kolink.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/lianli.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/logitech.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/republicofgamers.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/tforce.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/viewsonic.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/westerndigital.jpg" alt="logo"></div>
+                <div class="slide"><img src="assets/marcas/zotag.jpg" alt="logo"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- CAJAS DEL FOOTER -->
+        <div class="Cajas">
+            <div class="Caja1">
+                <a href="">
+                    <div class="border"></div>
+                    <img src="assets/logos/certificado.png" alt="" class="CertificadoMedia">
+                    <img src="assets/logos/datafiscal.jpg" alt="" class="Data-Fiscal">
+                </a>
+            </div>
+            <div class="Caja2">
+                <a href="" class="Ayuda">Ayuda</a>
+                <a href="" class="Boton-Arrepentimiento">Botón de arrepentimiento</a>
+                <a href="" class="Terminos">Términos y condiciones</a>
+            </div>
+            <div class="Caja3">
+                <p class="Seguinos">Seguinos en</p>
+                <div class="Botones">
+                    <a href="" class="boton1">
+                        <img src="assets/logos/x-logo-blanco.png" alt="" class="x">
+                        <img src="assets/logos/x-logo-naranja.png" alt="" class="x2">
+                    </a>
+                    <a href="" class="boton2">
+                        <img src="assets/logos/youtube-logo-blanco.png" alt="" class="Youtube">
+                        <img src="assets/logos/youtube-logo-naranja.png" alt="" class="Youtube2">
+                    </a>
+                    <a href="" class="boton3">
+                        <img src="assets/logos/facebook-icon-blanco.png" alt="" class="Facebook">
+                        <img src="assets/logos/facebook-icon-naranja.png" alt="" class="Facebook2">
+                    </a>
+                    <a href="" class="boton4">
+                        <img src="assets/logos/linkedin-icon-blanco.png" alt="" class="Linkedin">
+                        <img src="assets/logos/linkedin-icon-naranja.png" alt="" class="Linkedin2">
+                    </a>
+                    <a href="" class="boton5">
+                        <img src="assets/logos/instagram-icon-blanco.png" alt="" class="Instagram">
+                        <img src="assets/logos/instagram-icon-naranja.png" alt="" class="Instagram2">
+                    </a>
+                    <a href="" class="boton6">
+                        <img src="assets/logos/twitch-icon-blanco.png" alt="" class="Twitch">
+                        <img src="assets/logos/twitch-icon-naranja.png" alt="" class="Twitch2">
+                    </a>
+                    <a href="" class="boton7">
+                        <img src="assets/logos/tiktok-icon-blanco.png" alt="" class="Tiktok">
+                        <img src="assets/logos/tiktok-icon-naranja.png" alt="" class="Tiktok2">
+                    </a>
+                </div>
+            </div>
+            <div class="Caja4">
+                <img src="assets/logos/certificado.png" alt="" class="Certificado">
+                <a href="" class="Trabajar">¡Trabajá con nosotros!</a>
+            </div>
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="Derechos">
+            <p class="Marcas-Texto">Las marcas y logos de compragamer.com compragamer.com/tv compragamer.com/reviews
+                son propiedad de Newton Station SRL</p>
+            <p class="Derechos-Texto">Todos los derechos reservados 2017</p>
+        </div>
+    </footer>
+    <script src="./assets/js/Base.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+<script>
+
+
+
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+</script>
+
+</html>
